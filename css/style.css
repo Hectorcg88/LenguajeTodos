@@ -1,0 +1,344 @@
+.logo-empresa {
+    height: 50px;
+    width: 90px;
+}
+
+header nav .arribaderecha {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+header nav .arribaderecha li a {
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.primer-apartado .maq-coser {
+    max-height: 300px;
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 2%;
+}
+
+.primer-apartado {
+    background-color: rgb(245, 224, 202);
+    justify-content: space-around;
+    display: flex;
+}
+
+.primer-apartado .principal .ver-productos {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    background-color: rgb(255, 227, 182);
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+
+.primer-apartado .parrafo-principal {
+    font-size: xx-large;
+    margin-left: 5%;
+}
+
+.titulo-principal {
+    font-size: xx-large;
+    margin-left: 3%;
+}
+
+.contenedores {
+    display: flex;
+    border-radius: 20px;
+    gap: 3%;
+    justify-content: space-evenly;
+    margin: 1%;
+    text-align: center;
+    margin-top: 5%;
+    font-size: large;
+}
+
+.contenedores .valores {
+    background-color: rgb(255, 227, 182);
+    border-radius: 20px;
+    width: 33%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    border: 1px solid black;
+}
+
+.contenedores .compromiso {
+    background-color: rgb(255, 227, 182);
+    border-radius: 20px;
+    width: 33%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    border: 1px solid black;
+}
+
+.contenedores .calidad {
+    background-color: rgb(255, 227, 182);
+    border-radius: 20px;
+    width: 33%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    border: 1px solid black;
+}
+
+.formulario {
+    background-color: rgb(245, 224, 202);
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+
+.formulario .datos {
+    justify-content: space-around;
+    border-radius: 5px;
+    border: none;
+    margin: 0.5%;
+    margin-top: 1%;
+}
+
+.formulario .datos input {
+    width: 300px;
+    height: 30px;
+}
+
+
+.formulario .enviar {
+    background-color: rgb(255, 227, 182);
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.formulario .contacta {
+    padding-top: 2%;
+}
+
+
+.formulario .observaciones textarea {
+    width: 620px;
+    border-radius: 5px;
+    border: none;
+    height: 150px;
+}
+
+.abajo-formulario {
+    display: flex;
+    font-size: large;
+    margin: 2%;
+}
+
+.abajo-formulario li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.abajo-formulario .primer-abajo {
+    width: 33%;
+}
+
+.abajo-formulario .segundo-abajo {
+    width: 33%;
+}
+
+.abajo-formulario .tercer-abajo {
+    width: 33%;
+}
+
+.abajo-formulario .primer-abajo .negrita {
+    font-weight: bold;
+}
+
+.abajo-formulario .segundo-abajo .negrita {
+    font-weight: bold;
+}
+
+.abajo-formulario .tercer-abajo .negrita {
+    font-weight: bold;
+}
+
+.abajo {
+    background-color: rgb(245, 224, 202);
+    text-align: center;
+    position: relative;
+    height: 30px;
+}
+
+
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: flex;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .arribaderecha {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .arribaderecha .lista a {
+        color: #ecececec;
+    }
+}
+
+
+.abajo-header{
+    background-color: rgb(255, 227, 182);
+    text-align: center;
+}
+
+.objetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2%;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  
+  .imagen {
+    position: relative;
+  }
+  
+  .imagen img {
+    max-width: 60%;
+    object-fit: cover;
+    height: auto;
+  }
+  
+  .imagen p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+  }
+  
+  .imagen .precio {
+    margin-left: 50%; 
+  }
+
+  .detalles{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 2%;
+  }
+
+  .detalles img {
+    height: 30%;
+    width: 30%;
+  }
+
+  .detalles .parrafada p{
+    font-size: 20px;
+    margin: 3%;
+    margin-top: 0;
+  }
+
+  .detalles .parrafada .cuantia {
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+  }
+
+   .titulo-objeto{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 5%;
+  }
+
+  .detalles .parrafada .compra{
+    margin: 3%;
+    background-color: rgb(255, 227, 182);
+    border: 2px solid black;
+    cursor: pointer;
+    height: 10%;
+    width: 15%;
+    font-weight: bold;
+  }
+  
+  .detalles .parrafada .cantidad-metros{
+    display: block;
+    margin-left: 3%; 
+    margin-top: 1%;
+   }
+   
+   .detalles .parrafada label{
+    margin-left: 3%;
+   }
+
+   .objetos-detalles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    margin-left: 5%;
+    margin-top: 4%;
+   }
+
+   .relacion p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 5%;
+   }
+
+   .especial{
+    border: none;
+    background-color: rgb(249, 249, 249);
+    cursor: pointer;
+    color: rgb(248, 248, 248);
+   }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trenzatress</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/navegation.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="img/logo.jpg" alt="Logo landing page" class="logo-empresa">
+        <nav>
+            <ul class="arribaderecha">
+                <li class="lista"><a href="productos.html">Productos</a></li>
+                <li class="lista"><a href="index.html">Sobre Nosotros</a></li>
+                <li class="lista"><a href="index.html#contacta">Contacta</a></li>
+            </ul>
+        </nav>
+        <button onclick="mostrarMensaje()" class="especial">Haz clic aquí</button>
+    </header>
+
+    <section>
+        <nav class="abajo-header">
+            <p>Descuento a partir de 50€</p>
+        </nav>
+    </section>
+
+    <section>
+        <p class="titulo-objeto">Rieles de 200 metros</p>
+        <section class="detalles">
+            <img src="img/objeto.jpg" alt="Imgen de un rollo de hilo">
+            <div class="parrafada">
+                <p>Fabricado en diámetros entre 2,7 y 3,5 mm en tres tipos diferentes de materia prima como son el
+                    polipropileno, poliéster o nylon. Trenzado en granete o liso. Presentación en carretes de 200 metros
+                    o
+                    bobinas de 500 metros.</p>
+
+                <p class="cuantia">12€ por cada 200 metros</p>
+                <label for="cantidad-metros">Selecciona la cantidad de metros:</label>
+                <select class="cantidad-metros">
+                    <option>200 metros</option>
+                    <option>400 metros</option>
+                    <option>600 metros</option>
+                    <option>800 metros</option>
+                    <option>1000 metros</option>
+                    <option>1200 metros</option>
+                    <option>1400 metros</option>
+                    <option>1600 metros</option>
+                    <option>1800 metros</option>
+                    <option>2000 metros</option>
+                </select>
+                <button class="compra" type="submit" form="formularioCompra" onclick="agregarCesta()">Añadir a la
+                    cesta</button>
+            </div>
+        </section>
+
+    </section>
+
+    <section class="relacion">
+        <p>Productos relacionados con este producto</p>
+    </section>
+
+    <section class="objetos-detalles">
+        <div class="imagen"><p>Rieles 200m</p> <p class="precio">12€</p><img src="img/objeto.jpg" alt="La imágen de una máquina de coser"></div>
+        <div class="imagen"><p>Rieles 200m</p> <p class="precio">12€</p><img src="img/objeto.jpg" alt="La imágen de una máquina de coser"></div>        
+        <div class="imagen"><p>Rieles 200m</p> <p class="precio">12€</p><img src="img/objeto.jpg" alt="La imágen de una máquina de coser"></div>
+    </section>
+
+</body>
+
+</html>
