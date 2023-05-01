@@ -37,10 +37,48 @@
         <section class="detalles">
             <img src="img/objeto.jpg" alt="Imgen de un rollo de hilo">
             <div class="parrafada">
-                <p>Fabricado en diámetros entre 2,7 y 3,5 mm en tres tipos diferentes de materia prima como son el
-                    polipropileno, poliéster o nylon. Trenzado en granete o liso. Presentación en carretes de 200 metros
-                    o
-                    bobinas de 500 metros.</p>
+                <div class="botones">
+                    <button id="caracteristicas-boton" class="active"
+                        onclick="mostrarContenido('caracteristicas')">Características</button>
+                    <button id="valoraciones-boton" onclick="mostrarContenido('valoraciones')">Valoraciones</button>
+                    <button id="comentarios-boton" onclick="mostrarContenido('comentarios')">Comentarios</button>
+                </div>
+                <div id="caracteristicas" class="content active">
+                    <p>Fabricado en diámetros entre 2,7 y 3,5 mm en tres tipos diferentes de materia prima como son el
+                        polipropileno, poliéster o nylon. Trenzado en granete o liso. Presentación en carretes de 200
+                        metros
+                        o
+                        bobinas de 500 metros.</p>
+                </div>
+
+                <div id="valoraciones" class="content">
+                    <ul class="valoraciones-lista">
+                        <li>
+                            <div class="valoracion-estrellas">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <section class="valoracion-nombre">Héctor</section>
+                            <div class="valoracion-comentario">Compré este riel para mi armario y estoy encantada con
+                                él. Es muy fácil de instalar y funciona sin problemas. Además, su diseño moderno y
+                                elegante complementa perfectamente mi decoración. Me encanta la calidad del producto y
+                                lo recomendaría sin duda alguna.</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="comentarios" class="content">
+                    <div class="comentarios-div">
+                        <p><img src="img/icono.jpg" alt="Imagen de un icono"></p>
+                        <p>Acabo de comprar un riel y estoy muy contento con mi compra. El riel es de alta calidad y se
+                            ve muy resistente y duradero. Estoy muy satisfecho con mi compra y definitivamente
+                            recomendaría este riel a cualquiera que busque un producto de calidad que combine
+                            funcionalidad y estilo.</p>
+                    </div>
+                </div>
 
                 <p class="cuantia">12€ por cada 200 metros</p>
                 <label for="cantidad-metros">Selecciona la cantidad de metros:</label>
@@ -68,9 +106,18 @@
     </section>
 
     <section class="objetos-detalles">
-        <div class="imagen"><p>Rieles 200m</p> <p class="precio">12€</p><img src="img/objeto.jpg" alt="La imágen de una máquina de coser"></div>
-        <div class="imagen"><p>Rieles 200m</p> <p class="precio">12€</p><img src="img/objeto.jpg" alt="La imágen de una máquina de coser"></div>        
-        <div class="imagen"><p>Rieles 200m</p> <p class="precio">12€</p><img src="img/objeto.jpg" alt="La imágen de una máquina de coser"></div>
+        <div class="imagen">
+            <p>Rieles 200m</p>
+            <p class="precio">12€</p><img src="img/objeto.jpg" alt="La imágen de una máquina de coser">
+        </div>
+        <div class="imagen">
+            <p>Rieles 200m</p>
+            <p class="precio">12€</p><img src="img/objeto.jpg" alt="La imágen de una máquina de coser">
+        </div>
+        <div class="imagen">
+            <p>Rieles 200m</p>
+            <p class="precio">12€</p><img src="img/objeto.jpg" alt="La imágen de una máquina de coser">
+        </div>
     </section>
 
 </body>

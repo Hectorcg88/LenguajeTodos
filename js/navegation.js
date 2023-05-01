@@ -42,3 +42,19 @@ cerrar.addEventListener("click", () => {
 function mostrarMensaje() {
   alert("Enhorabuena, has encontrado un descuento especial, con el codigo QWER-HFAS-IAFJ tendras un 10% de descuento en tu proxima compra");
 }
+
+/**
+ * Esta funcion sirve para que al seleccionar el apartado se cambie al elegido
+ * @param {*} contentId 
+ */
+
+function mostrarContenido(contentId) {
+  const contents = document.getElementsByClassName('content');
+  for (let i = 0; i < contents.length; i++) {
+    contents[i].classList.remove('active');
+  }
+
+  const content = document.getElementById(contentId);
+  content.classList.add('active');
+  
+}

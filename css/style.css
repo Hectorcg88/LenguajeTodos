@@ -342,3 +342,66 @@ header nav .arribaderecha li a {
     cursor: pointer;
     color: rgb(248, 248, 248);
    }
+
+
+   .botones {
+    display: flex;
+  }
+  
+    .botones button {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #eee;
+    margin-left: 2%;
+  }
+  
+  .content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #cbcbcb;
+    margin-left: 2%;
+  }
+  .content.active {
+    display: block;
+  }
+
+  .content img{
+    width: 75px;
+    height: 75px;
+  }
+  
+  .content .comentarios-div {
+    display: flex;
+  }
+
+
+  .valoraciones-lista {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .valoraciones-lista li {
+    margin-bottom: 20px;
+  }
+  
+  .valoracion-estrellas {
+    color: #ffd500;
+    font-size: 20px;
+  }
+  
+  .valoracion-nombre {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .valoracion-comentario {
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  
