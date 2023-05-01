@@ -8,6 +8,7 @@
     <title>Trenzatress</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/navegation.js" defer></script>
+    <script src="js/precio.js" defer></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
@@ -80,9 +81,9 @@
                     </div>
                 </div>
 
-                <p class="cuantia">12€ por cada 200 metros</p>
+                <p class="cuantia" id="precio">12€ por cada 200 metros</p>
                 <label for="cantidad-metros">Selecciona la cantidad de metros:</label>
-                <select class="cantidad-metros">
+                <select class="cantidad-metros" id="tamaño">
                     <option>200 metros</option>
                     <option>400 metros</option>
                     <option>600 metros</option>
